@@ -74,8 +74,9 @@ function sendMail() {
       message: document.getElementById('comment').value,
    };
 
-   const serviceID = '1Fj-P6IWZuPLihBN1';
+   const serviceID = 'service_502qgcw';
    const templateID = 'template_m9ol0qr';
+   console.log(serviceID)
 
    emailjs
       .send(serviceID, templateID, params)
